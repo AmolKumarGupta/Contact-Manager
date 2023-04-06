@@ -1,4 +1,5 @@
 import { Box, Button, Container, Typography } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 
 export default function Layout({ children }) {
   return (
@@ -17,7 +18,12 @@ export default function Layout({ children }) {
         <Typography variant="h1" fontSize="2rem" color="">
           Contacts
         </Typography>
-        <Button variant="contained" size="small" color="success">
+        <Button
+          variant="contained"
+          startIcon={<AddIcon />}
+          size="small"
+          color="success"
+        >
           Add
         </Button>
       </Box>
