@@ -1,7 +1,8 @@
-import Test from "./components/Test";
+import Layout from "./layouts/Layout";
+import "./app.css";
 
 function App() {
-  return <Test />;
+  return <Layout></Layout>;
 }
 
 export default App;
