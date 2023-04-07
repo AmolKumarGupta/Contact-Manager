@@ -4,7 +4,7 @@ import { Stack } from "@mui/material";
 
 export default function ContactGrid({ data }) {
   const contacts = useMemo(() => {
-    return data.map((item) => <Contact data={item} key={item.id} />);
+    return data.map((item) => <Contact data={item} key={item._id} />);
   }, [data]);
 
   return (
