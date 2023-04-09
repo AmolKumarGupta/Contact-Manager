@@ -1,7 +1,11 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
+import { useState } from "react";
+import AddModal from "../components/AddModal";
 
 export default function Layout({ children }) {
+  const [isAddModalOpen, setAddModalOpen] = useState(false);
+
   return (
     <Container>
       <Box
@@ -23,11 +27,19 @@ export default function Layout({ children }) {
           startIcon={<AddIcon />}
           size="small"
           color="success"
+          onClick={() => setAddModalOpen(true)}
         >
           Add
         </Button>
       </Box>
+
       {children}
+
+      <AddModal
+        name="test"
+        open={isAddModalOpen}
+        handleClose={() => setAddModalOpen(false)}
+      />
     </Container>
   );
 }
