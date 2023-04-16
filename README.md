@@ -5,9 +5,10 @@ The project will demonstrate how to use Firestore to store data and how React ca
 With this project, beginners will gain an understanding of how to use these technologies to create functional applications that can efficiently manage data.
 
 ## Technology
-1. React
-2. Firestore
-3. Material UI
+1. Vite
+2. React
+3. Firestore
+4. Material UI
 
 ## Snapshot
 <p align="center">
